@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Logros | FÉNIX</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Montserrat', sans-serif;
+    min-height:100vh;
+    overflow-x:hidden;
+
+    background:linear-gradient(-45deg,#1f0000,#4b0000,#750000,#2b0000);
+    background-size:400% 400%;
+    animation:fondo 10s ease infinite;
+    color:white;
+}
+
+/* ANIMACIÓN */
+@keyframes fondo{
+    0%{
+        background-position:0% 50%;
+    }
+    50%{
+        background-position:100% 50%;
+    }
+    100%{
+        background-position:0% 50%;
+    }
+}
+
+/* NAV */
+nav{
+    width:100%;
+    padding:25px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:35px;
+    font-weight:900;
+    letter-spacing:5px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    background:#b80000;
+    padding:12px 25px;
+    border-radius:40px;
+    transition:0.3s;
+    font-weight:700;
+}
+
+nav a:hover{
+    transform:scale(1.05);
+    background:#ff2b2b;
+}
+
+/* TITULO */
+.titulo{
+    text-align:center;
+    margin-top:30px;
+}
+
+.titulo h1{
+    font-size:70px;
+    letter-spacing:8px;
+    font-weight:900;
+}
+
+.titulo p{
+    margin-top:10px;
+    color:#d6d6d6;
+    letter-spacing:3px;
+}
+
+/* TARJETAS */
+.logros{
+    width:90%;
+    max-width:1200px;
+    margin:60px auto;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+/* CARD */
+.card{
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.1);
+    backdrop-filter:blur(10px);
+
+    border-radius:25px;
+    overflow:hidden;
+
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+/* IMAGEN */
+.card img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+}
+
+/* TEXTO */
+.info{
+    padding:25px;
+}
+
+.info h2{
+    font-size:28px;
+    margin-bottom:10px;
+}
+
+.info p{
+    color:#d3d3d3;
+    line-height:1.6;
+}
+
+/* MEDALLA */
+.medalla{
+    margin-top:18px;
+    display:inline-block;
+    background:#ff3131;
+    padding:10px 18px;
+    border-radius:30px;
+    font-weight:700;
+}
+
+/* RESPONSIVE */
+@media(max-width:700px){
+
+    .titulo h1{
+        font-size:45px;
+    }
+
+    nav{
+        flex-direction:column;
+        gap:20px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+    <div class="logo">FÉNIX</div>
+
+    <a href="paginae.html">INICIO</a>
+</nav>
+
+<!-- TITULO -->
+<section class="titulo">
+
+    <h1>LOGROS</h1>
+
+    <p>DISCIPLINA • CONSTANCIA • SUPERACIÓN</p>
+
+</section>
+
+<!-- CARDS -->
+<section class="logros">
+
+    <!-- CARD 1 -->
+    <div class="card">
+
+        <img src="aa.jfif">
+
+        <div class="info">
+
+            <h2>Medalla de plata en el nacional de Tabasco</h2>
+
+            <p>
+                Participación destacada en competencias deportivas
+                demostrando esfuerzo y disciplina.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MARCA:12.80
+            </p>
+
+
+
+        </div>
+
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="card">
+
+        <img src="k.jfif">
+
+        <div class="info">
+
+            <h2>Medalla de oro en el nacional de Tlaxcala</h2>
+
+            <p>
+                Horas de entrenamiento enfocadas en mejorar fuerza,
+                resistencia y rendimiento físico.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MARCA:60.50
+            </p>
+
+            
+
+        </div>
+
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="card">
+
+        <img src="tla.jfif">
+
+        <div class="info">
+
+            <h2>Medalla de oro en el nacional de Tlaxcala</h2>
+
+            <p>
+                Cada meta alcanzada representa constancia,
+                pasión y crecimiento personal.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MARCA:43.67
+            </p>
+
+
+        </div>
+
+    </div>
+<!-- CARD 4 -->
+    <div class="card">
+
+        <img src="c.jfif">
+
+        <div class="info">
+
+            <h2>Medallaa de oro, plata y bronce en el nacional de Tabasco</h2>
+
+            <p>
+                Uno de los mejores años para el fénix team.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </p>
+
+
+        </div>
+
+    </div>
+
+</div>
+<!-- CARD 5 -->
+    <div class="card">
+
+        <img src="v.jfif">
+        <div class="info">
+
+            <h2>Medalla de oro para México en Venezuela</h2>
+
+            <p>
+               Talento y disciplina dentro y fuera de la pista.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </p>
+
+
+        </div>
+
+    </div>
+<!-- CARD 6 -->
+    <div class="card">
+
+        <img src="li.jfif">
+        <div class="info">
+
+            <h2>Medalla de bronce en el nacional de Guadalajara</h2>
+
+            <p>
+               El esfuerzo se ve dentro y fuera de la pista.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </p>
+
+
+        </div>
+
+    </div>
+<!-- CARD 7 -->
+    <div class="card">
+
+        <img src="r.jfif">
+        <div class="info">
+
+            <h2>Medalla de plata en el nacional de Guadalajara</h2>
+
+            <p>
+               Entrenar fuerte, competir con pasión.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </p>
+
+
+        </div>
+
+    </div>
+
+
+
+</section>
+
+</body>
+</html>
