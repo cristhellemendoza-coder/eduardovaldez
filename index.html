@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FÉNIX</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Montserrat', sans-serif;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+
+    /* FONDO ANIMADO */
+    background:linear-gradient(-45deg,#2b0000,#5c0000,#7a0000,#3a0000);
+    background-size:400% 400%;
+    animation:fondo 10s ease infinite;
+}
+
+/* ANIMACIÓN */
+@keyframes fondo{
+    0%{
+        background-position:0% 50%;
+    }
+    50%{
+        background-position:100% 50%;
+    }
+    100%{
+        background-position:0% 50%;
+    }
+}
+
+/* CONTENEDOR */
+.inicio{
+    text-align:center;
+    width:90%;
+}
+
+/* IMAGEN DEL FÉNIX */
+.banner{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:10px;
+}
+
+.banner img{
+    width:320px;
+    max-width:90%;
+    
+    /* QUITA FONDO BLANCO VISUAL */
+    mix-blend-mode:screen;
+    
+    /* SIN MÁRGENES */
+    display:block;
+}
+
+/* TITULO */
+h1{
+    font-size:75px;
+    font-weight:900;
+    letter-spacing:10px;
+    color:white;
+    text-shadow:0 0 20px rgba(255,255,255,0.2);
+}
+
+/* SUBTEXTO */
+.sub{
+    margin-top:10px;
+    color:#d9d9d9;
+    font-size:16px;
+    letter-spacing:4px;
+}
+
+/* BOTONES */
+.botones{
+    margin-top:45px;
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.botones a{
+    text-decoration:none;
+    color:white;
+    background:linear-gradient(135deg,#b80000,#ff3131);
+    padding:16px 38px;
+    border-radius:50px;
+    font-size:18px;
+    font-weight:700;
+    letter-spacing:1px;
+    transition:0.3s;
+    box-shadow:0 5px 20px rgba(255,0,0,0.3);
+}
+
+.botones a:hover{
+    transform:translateY(-5px) scale(1.05);
+    box-shadow:0 10px 25px rgba(255,0,0,0.45);
+}
+
+/* RESPONSIVE */
+@media(max-width:700px){
+
+    h1{
+        font-size:50px;
+    }
+
+    .botones{
+        gap:15px;
+    }
+
+    .botones a{
+        padding:14px 25px;
+        font-size:15px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="inicio">
+
+    <!-- LOGO -->
+    <div class="banner">
+        <img src="pngwing.com.png" alt="Fénix">
+    </div>
+
+    <!-- TITULO -->
+    <h1>FÉNIX</h1>
+
+    <!-- TEXTO -->
+    <p class="sub">PODER • DISCIPLINA • PASIÓN</p>
+
+    <!-- BOTONES -->
+    <div class="botones">
+        
+        <a href="logros.html">LOGROS</a>
+      
+    </div>
+
+</div>
+
+</body>
+</html>
